@@ -21,6 +21,22 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 eval "$(starship init zsh)"
 
+# Velikost historie v paměti i v souboru na disku
+export HISTSIZE=10000
+export SAVEHIST=10000
+
+# Cesta k souboru, kam se historie ukládá
+export HISTFILE="$HOME/.zsh_history"
+
+# Okamžité zapisování příkazů do historie (nezávisle na zavření terminálu)
+setopt INC_APPEND_HISTORY
+
+# Smazání staršího duplicitního záznamu, pokud se příkaz opakuje
+setopt HIST_IGNORE_ALL_DUPS
+
+# Nepřidávat do historie příkazy, které začínají mezerou (hodí se pro tajná hesla apod.)
+setopt HIST_IGNORE_SPACE
+
 export SKOLA_MOUNT_DIR="$HOME/Skola_Disk"
 
 skola-on() {
