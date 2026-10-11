@@ -74,24 +74,3 @@ skola-off() {
 export PATH="/home/snehulak/.local/bin:$PATH"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
