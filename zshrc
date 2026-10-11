@@ -19,7 +19,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # Ignoruje velkÃ¡/malÃ
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
-
+eval "$(starship init zsh)"
 
 export SKOLA_MOUNT_DIR="$HOME/Skola_Disk"
 
