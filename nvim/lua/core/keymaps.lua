@@ -18,3 +18,11 @@ vim.keymap.set("n", "<leader>ag", ":TermExec cmd='agy'<CR>", { silent = true })
 vim.keymap.set("n", "<space>", "za", { desc = "Toggle fold" })
 
 vim.api.nvim_set_keymap("t", "<C-v><Esc>", "<Esc>", { noremap = true, silent = true })
+
+-- TAB'S
+vim.keymap.set("n", "<leader>tn", "<cmd>tabnew<CR>", { desc = "Nový tab" })
+
+vim.keymap.set("n", "<S-h>", "<cmd>tabprevious<CR>", { desc = "Předchozí tab" })
+vim.keymap.set("n", "<S-l>", "<cmd>tabnext<CR>", { desc = "Další tab" })
+
+vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Zavřít tab" })

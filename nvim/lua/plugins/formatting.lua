@@ -18,8 +18,7 @@ return {
 				args = { "-t", "2", "-" },
 			},
 		},
-		format_on_save = {
-			timeout_ms = 1000,
+		format_after_save = {
 			async = true,
 			lsp_fallback = true,
 		},

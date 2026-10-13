@@ -9,6 +9,7 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:#394260 bg:#212736)\
+$python\
 $nodejs\
 $bun\
 $rust\
@@ -30,6 +31,11 @@ truncation_symbol = "…/"
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
+
+[python]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ($version) ](fg:#3399CC bg:#212736)]($style)'
 
 [git_branch]
 symbol = ""
